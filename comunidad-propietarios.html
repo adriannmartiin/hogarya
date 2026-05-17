@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Calculadora Comunidad de Propietarios — Cuotas y Derramas | HogarYa 2026</title>
+<meta name="description" content="Calcula tu cuota mensual de comunidad de propietarios y el importe de derramas extraordinarias según tu coeficiente de participación.">
+<link rel="canonical" href="https://hogarya.org/comunidad-propietarios.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb">Plusvalía</a><a href="/coste-calefaccion.html" class="nb">Calefacción</a><a href="/fianza-alquiler.html" class="nb">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb on">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Calculadora de Comunidad de Propietarios</span></div><h1>🏢 Calculadora de <em>Comunidad de Propietarios</em></h1><p>Calcula tu cuota mensual de comunidad y el importe que te corresponde pagar en una derrama extraordinaria según tu coeficiente de participación.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">🏢 ¿Cuánto me toca de comunidad?</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Presupuesto anual comunidad (€)</label><input type="number" class="finp" id="com-pres" placeholder="12000" min="100"></div>
+      <div class="fg"><label class="flbl">Tu coeficiente de participación (%)</label><input type="number" class="finp" id="com-coef" placeholder="8.5" step="0.01" min="0.01" max="100"></div>
+    </div>
+    <button class="btn-calc" onclick="calcCom()">Calcular mi cuota</button>
+  </div>
+  <div id="result-cuota"></div>
+</div>
+<div class="calc-box" style="margin-top:0">
+  <div class="calc-title" style="font-size:16px;margin-bottom:14px">🔧 Calculadora de Derrama</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Coste total de la derrama (€)</label><input type="number" class="finp" id="der-total" placeholder="30000" min="100"></div>
+      <div class="fg"><label class="flbl">Tu coeficiente (%)</label><input type="number" class="finp" id="der-coef" placeholder="8.5" step="0.01" min="0.01" max="100"></div>
+    </div>
+    <div class="fg"><label class="flbl">Nº de plazos para pagar la derrama</label>
+      <select class="fsel" id="der-plazos">
+        <option value="1">Pago único</option>
+        <option value="3">3 meses</option>
+        <option value="6">6 meses</option>
+        <option value="12" selected>12 meses</option>
+        <option value="24">24 meses</option>
+      </select>
+    </div>
+    <button class="btn-calc" onclick="calcDer()">Calcular derrama</button>
+  </div>
+  <div id="result-der"></div>
+  <p class="infon"><strong>Coeficiente de participación:</strong> Aparece en la escritura de tu vivienda o en el título constitutivo de la comunidad. Es el porcentaje que tu propiedad representa sobre el total del edificio.</p>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/calculadora-ibi.html" class="rel-card"><div class="rel-ic">🏛️</div><div><div class="rel-t">IBI</div><div class="rel-d">Impuesto anual de tu vivienda</div></div></a><a href="/plusvalia-municipal.html" class="rel-card"><div class="rel-ic">📈</div><div><div class="rel-t">Plusvalía</div><div class="rel-d">Al vender tu casa</div></div></a><a href="/fianza-alquiler.html" class="rel-card"><div class="rel-ic">🏡</div><div><div class="rel-t">Alquiler</div><div class="rel-d">Fianza y gastos iniciales</div></div></a><a href="/factura-luz.html" class="rel-card"><div class="rel-ic">⚡</div><div><div class="rel-t">Factura de Luz</div><div class="rel-d">Calcula tu consumo</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+function calcCom(){
+  var pres=parseFloat(document.getElementById('com-pres').value),coef=parseFloat(document.getElementById('com-coef').value),el=document.getElementById('result-cuota');
+  if(!pres||!coef){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Completa todos los campos</p>';return}
+  var anual=pres*(coef/100),mens=anual/12,trim=anual/4;
+  el.innerHTML='<div class="res vis"><div class="rmain">'+mens.toFixed(2)+' €/mes</div><div class="rlbl">Tu cuota mensual de comunidad (coef. '+coef+'%)</div><div class="rrows"><div class="rr"><span class="rk">Presupuesto anual comunidad</span><span class="rv">'+pres.toLocaleString('es-ES')+' €</span></div><div class="rr"><span class="rk">Tu coeficiente</span><span class="rv">'+coef+'%</span></div><div class="rr"><span class="rk">Tu parte anual</span><span class="rv warn">'+anual.toFixed(2)+' €/año</span></div><div class="rr"><span class="rk">Tu cuota mensual</span><span class="rv warn">'+mens.toFixed(2)+' €/mes</span></div><div class="rr"><span class="rk">Tu cuota trimestral</span><span class="rv">'+trim.toFixed(2)+' €/trimestre</span></div></div></div>';
+}
+function calcDer(){
+  var total=parseFloat(document.getElementById('der-total').value),coef=parseFloat(document.getElementById('der-coef').value),plazos=parseFloat(document.getElementById('der-plazos').value),el=document.getElementById('result-der');
+  if(!total||!coef){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Completa todos los campos</p>';return}
+  var tuParte=total*(coef/100),porPlazo=tuParte/plazos;
+  el.innerHTML='<div class="res vis"><div class="rmain">'+tuParte.toFixed(2)+' €</div><div class="rlbl">Tu parte de la derrama de '+total.toLocaleString('es-ES')+' €</div><div class="rrows"><div class="rr"><span class="rk">Coste total derrama</span><span class="rv">'+total.toLocaleString('es-ES')+' €</span></div><div class="rr"><span class="rk">Tu coeficiente</span><span class="rv">'+coef+'%</span></div><div class="rr"><span class="rk">Tu parte total</span><span class="rv bad">'+tuParte.toFixed(2)+' €</span></div>'+(plazos>1?'<div class="rr sep-r"><span class="rk" style="font-weight:700">Cuota mensual ('+plazos+' plazos)</span><span class="rv warn" style="font-size:16px">'+porPlazo.toFixed(2)+' €/mes</span></div>':'')+'</div></div>';
+}
+</script>

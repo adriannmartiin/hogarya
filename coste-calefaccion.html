@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Comparativa Calefacción 2026 — Gas vs Bomba Calor vs Eléctrico | HogarYa</title>
+<meta name="description" content="Compara el coste anual de calefacción con gas natural, gasoil, bomba de calor aerotérmica, eléctrico o pellets. Calcula cuánto ahorras cambiando.">
+<link rel="canonical" href="https://hogarya.org/coste-calefaccion.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb">Plusvalía</a><a href="/coste-calefaccion.html" class="nb on">Calefacción</a><a href="/fianza-alquiler.html" class="nb">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Comparativa de Sistemas de Calefacción</span></div><h1>🔥 Comparativa de <em>Sistemas de Calefacción</em></h1><p>Compara el coste real de calefactar tu hogar con diferentes sistemas: gas natural, gasoil, bomba de calor, eléctrico resistivo o pellets. Descubre cuánto ahorrarías cambiando de sistema.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">🔥 ¿Cuánto me cuesta calentar mi casa?</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Superficie a calentar (m²)</label><input type="number" class="finp" id="cal-m2" placeholder="80" min="10" max="500"></div>
+      <div class="fg"><label class="flbl">Horas de calefacción al día</label><input type="number" class="finp" id="cal-h" placeholder="8" min="1" max="24"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Meses de calefacción al año</label><input type="number" class="finp" id="cal-meses" placeholder="5" min="1" max="12"></div>
+      <div class="fg"><label class="flbl">Aislamiento de la vivienda</label>
+        <select class="fsel" id="cal-aisla">
+          <option value="80">Bueno (casa nueva, bien aislada)</option>
+          <option value="100" selected>Normal (vivienda media española)</option>
+          <option value="130">Deficiente (casa antigua, mal aislada)</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn-calc" onclick="calcCal()">Comparar sistemas</button>
+  </div>
+  <div id="result"></div>
+  <p class="infon">La necesidad de calefacción varía mucho por zona climática. Precios de referencia 2026: gas natural ~0,08€/kWh, gasoil ~0,12€/kWh, electricidad ~0,15€/kWh, pellets ~0,055€/kWh.</p>
+</div>
+<div class="calc-box" style="background:var(--g50)">
+  <p class="stitle">📊 Comparativa de sistemas de calefacción</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13px">
+    <thead><tr style="background:var(--navy)"><th style="color:white;padding:7px 10px;font-family:var(--fd);font-size:11px">Sistema</th><th style="color:white;padding:7px 10px;font-family:var(--fd);font-size:11px">Rendimiento</th><th style="color:white;padding:7px 10px;font-family:var(--fd);font-size:11px;text-align:right">€/kWh calor</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:7px 10px;font-weight:700">Bomba de calor (aerotermia)</td><td style="padding:7px 10px">COP 3-4</td><td style="padding:7px 10px;text-align:right;color:var(--green);font-weight:700">~0,04-0,06 €</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:7px 10px;font-weight:700">Pellets</td><td style="padding:7px 10px">90-95%</td><td style="padding:7px 10px;text-align:right;color:var(--green);font-weight:700">~0,055 €</td></tr>
+      <tr><td style="padding:7px 10px;font-weight:700">Gas natural</td><td style="padding:7px 10px">85-95%</td><td style="padding:7px 10px;text-align:right;color:var(--amber);font-weight:700">~0,07-0,09 €</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:7px 10px;font-weight:700">Gasoil calefacción</td><td style="padding:7px 10px">85-90%</td><td style="padding:7px 10px;text-align:right;color:var(--amber);font-weight:700">~0,10-0,13 €</td></tr>
+      <tr><td style="padding:7px 10px;font-weight:700">Eléctrico resistivo</td><td style="padding:7px 10px">100%</td><td style="padding:7px 10px;text-align:right;color:var(--red);font-weight:700">~0,15 €</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/factura-luz.html" class="rel-card"><div class="rel-ic">⚡</div><div><div class="rel-t">Factura de Luz</div><div class="rel-d">Calcula tu consumo eléctrico</div></div></a><a href="/panel-solar.html" class="rel-card"><div class="rel-ic">☀️</div><div><div class="rel-t">Placas Solares</div><div class="rel-d">Complementa con autoconsumo</div></div></a><a href="/ahorro-energia.html" class="rel-card"><div class="rel-ic">💡</div><div><div class="rel-t">Ahorro Energético</div><div class="rel-d">Reduce gastos del hogar</div></div></a><a href="/certificado-energetico.html" class="rel-card"><div class="rel-ic">📋</div><div><div class="rel-t">Certificado Energético</div><div class="rel-d">Mejora el aislamiento</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+function calcCal(){
+  var m2=parseFloat(document.getElementById('cal-m2').value),h=parseFloat(document.getElementById('cal-h').value),meses=parseFloat(document.getElementById('cal-meses').value),aisla=parseFloat(document.getElementById('cal-aisla').value),el=document.getElementById('result');
+  if(!m2||!h||!meses){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Completa todos los campos</p>';return}
+  var kwhNecesario=m2*aisla*h/1000*30*meses;
+  var sistemas=[
+    {nombre:'Bomba de calor (aerotermia)',cop:3.5,precio:0.15,color:'good',icono:'🌡️'},
+    {nombre:'Pellets',cop:0.92,precio:0.055/0.92,color:'good',icono:'🪵'},
+    {nombre:'Gas natural',cop:0.9,precio:0.08/0.9,color:'warn',icono:'🔵'},
+    {nombre:'Gasoil calefacción',cop:0.87,precio:0.12/0.87,color:'warn',icono:'🛢️'},
+    {nombre:'Eléctrico resistivo',cop:1.0,precio:0.15,color:'bad',icono:'⚡'},
+  ];
+  var rows=sistemas.map(function(s){
+    var costeAnual=s.nombre==='Bomba de calor (aerotermia)'?kwhNecesario/s.cop*0.15:kwhNecesario*s.precio;
+    return '<div class="rr"><span class="rk">'+s.icono+' '+s.nombre+'</span><span class="rv '+s.color+'">'+costeAnual.toFixed(0)+' €/año</span></div>';
+  }).join('');
+  var bdc=kwhNecesario/3.5*0.15,gas=kwhNecesario*0.08/0.9,ele=kwhNecesario*0.15,ahorro=ele-bdc;
+  el.innerHTML='<div class="res vis"><div class="rmain">'+kwhNecesario.toFixed(0)+' kWh/año</div><div class="rlbl">Necesidad energética estimada para '+m2+' m² ('+meses+' meses)</div><div class="rrows">'+rows+'</div></div><div class="notice green" style="margin-top:8px">☀️ Con bomba de calor y placas solares podrías ahorrar hasta '+(ahorro*0.4).toFixed(0)+'€/año adicionales respecto al gas y hasta '+ahorro.toFixed(0)+'€/año respecto al eléctrico resistivo.</div>';
+}
+</script>

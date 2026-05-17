@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Calculadora Ahorro Energético — LED y Electrodomésticos A+++ | HogarYa 2026</title>
+<meta name="description" content="Calcula cuánto ahorras cambiando a bombillas LED o a electrodomésticos de alta eficiencia (A+++). Recuperación de inversión y ahorro anual.">
+<link rel="canonical" href="https://hogarya.org/ahorro-energia.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb">Plusvalía</a><a href="/coste-calefaccion.html" class="nb">Calefacción</a><a href="/fianza-alquiler.html" class="nb">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Calculadora de Ahorro Energético</span></div><h1>💡 Calculadora de <em>Ahorro Energético</em></h1><p>Calcula el ahorro real al cambiar tus bombillas a LED o tus electrodomésticos por modelos de alta eficiencia. Descubre en cuánto tiempo recuperas la inversión.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">💡 Ahorro al cambiar a LED</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Nº de bombillas a cambiar</label><input type="number" class="finp" id="led-n" placeholder="10" min="1" max="100"></div>
+      <div class="fg"><label class="flbl">Tipo de bombilla actual</label>
+        <select class="fsel" id="led-tipo">
+          <option value="60">Incandescente 60W</option>
+          <option value="40">Incandescente 40W</option>
+          <option value="35">Halógena 35W</option>
+          <option value="20">Bajo consumo (CFL) 20W</option>
+        </select>
+      </div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Horas de uso al día por bombilla</label><input type="number" class="finp" id="led-h" placeholder="5" min="0.5" step="0.5" max="24"></div>
+      <div class="fg"><label class="flbl">Precio electricidad (€/kWh)</label><input type="number" class="finp" id="led-p" placeholder="0.15" step="0.01" min="0.05" value="0.15"></div>
+    </div>
+    <div class="fg"><label class="flbl">Coste por bombilla LED equivalente (€)</label><input type="number" class="finp" id="led-coste" placeholder="4" step="0.5" min="0.5" value="4"></div>
+    <button class="btn-calc" onclick="calcLED()">Calcular ahorro LED</button>
+  </div>
+  <div id="result-led"></div>
+</div>
+<div class="calc-box">
+  <div class="calc-title">🧊 Ahorro al cambiar el frigorífico</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Consumo frigorífico actual (kWh/año)</label><input type="number" class="finp" id="frig-viejo" placeholder="500" min="50"></div>
+      <div class="fg"><label class="flbl">Consumo nuevo A+++ (kWh/año)</label><input type="number" class="finp" id="frig-nuevo" placeholder="130" min="50"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Precio electricidad (€/kWh)</label><input type="number" class="finp" id="frig-p" placeholder="0.15" step="0.01" value="0.15"></div>
+      <div class="fg"><label class="flbl">Precio del nuevo frigorífico (€)</label><input type="number" class="finp" id="frig-coste" placeholder="700" min="100"></div>
+    </div>
+    <button class="btn-calc" onclick="calcFrig()">Calcular ahorro frigorífico</button>
+  </div>
+  <div id="result-frig"></div>
+  <p class="infon">Un frigorífico A+ de 10 años consume ~500 kWh/año. Uno nuevo A+++ consume ~130 kWh/año. El ahorro puede superar los 55€/año.</p>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/factura-luz.html" class="rel-card"><div class="rel-ic">⚡</div><div><div class="rel-t">Factura de Luz</div><div class="rel-d">Calcula tu factura completa</div></div></a><a href="/consumo-electrodomesticos.html" class="rel-card"><div class="rel-ic">🔌</div><div><div class="rel-t">Electrodomésticos</div><div class="rel-d">Consumo de cada aparato</div></div></a><a href="/panel-solar.html" class="rel-card"><div class="rel-ic">☀️</div><div><div class="rel-t">Placas Solares</div><div class="rel-d">Autoconsumo y ahorro</div></div></a><a href="/certificado-energetico.html" class="rel-card"><div class="rel-ic">📋</div><div><div class="rel-t">Certificado Energético</div><div class="rel-d">Mejora la calificación A-G</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+function calcLED(){
+  var n=parseFloat(document.getElementById('led-n').value),tipow=parseFloat(document.getElementById('led-tipo').value),h=parseFloat(document.getElementById('led-h').value),p=parseFloat(document.getElementById('led-p').value)||0.15,coste=parseFloat(document.getElementById('led-coste').value)||4,el=document.getElementById('result-led');
+  if(!n||!h){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Completa nº bombillas y horas</p>';return}
+  var ledw=tipow<=40?4:tipow<=35?5:tipow<=60?8:12;
+  var ahorroW=(tipow-ledw)*n,kwhDia=ahorroW*h/1000,kwhAno=kwhDia*365,ahorroAno=kwhAno*p,inversion=n*coste,payback=inversion/ahorroAno;
+  el.innerHTML='<div class="res vis"><div class="rmain">'+ahorroAno.toFixed(2)+' €/año</div><div class="rlbl">Ahorro al cambiar '+n+' bombillas de '+tipow+'W a LED (~'+ledw+'W)</div><div class="rrows"><div class="rr"><span class="rk">Ahorro de potencia</span><span class="rv">'+(tipow-ledw)+'W por bombilla ('+ahorroW+'W total)</span></div><div class="rr"><span class="rk">Ahorro en kWh/año</span><span class="rv">'+kwhAno.toFixed(1)+' kWh</span></div><div class="rr"><span class="rk">Ahorro económico anual</span><span class="rv good">'+ahorroAno.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Inversión total ('+n+' LED × '+coste+'€)</span><span class="rv">'+inversion.toFixed(2)+' €</span></div><div class="rr sep-r"><span class="rk" style="font-weight:700">Amortización</span><span class="rv good" style="font-size:15px">'+payback.toFixed(1)+' meses</span></div></div></div>';
+}
+function calcFrig(){
+  var viejo=parseFloat(document.getElementById('frig-viejo').value),nuevo=parseFloat(document.getElementById('frig-nuevo').value),p=parseFloat(document.getElementById('frig-p').value)||0.15,coste=parseFloat(document.getElementById('frig-coste').value),el=document.getElementById('result-frig');
+  if(!viejo||!nuevo){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Introduce los consumos</p>';return}
+  if(nuevo>=viejo){el.innerHTML='<p style="color:var(--amber);font-size:13px;margin-top:8px">⚠️ El nuevo consume igual o más. No hay ahorro.</p>';return}
+  var ahorroKwh=viejo-nuevo,ahorroAno=ahorroKwh*p,payback=coste?coste/ahorroAno:null;
+  el.innerHTML='<div class="res vis"><div class="rmain">'+ahorroAno.toFixed(2)+' €/año</div><div class="rlbl">Ahorro al cambiar de '+viejo+' a '+nuevo+' kWh/año</div><div class="rrows"><div class="rr"><span class="rk">Reducción de consumo</span><span class="rv good">'+ahorroKwh+' kWh/año</span></div><div class="rr"><span class="rk">Ahorro económico anual</span><span class="rv good">'+ahorroAno.toFixed(2)+' €</span></div>'+(payback?'<div class="rr sep-r"><span class="rk" style="font-weight:700">Amortización del frigorífico</span><span class="rv warn" style="font-size:15px">'+payback.toFixed(1)+' años</span></div>':'')+'</div></div>';
+}
+</script>

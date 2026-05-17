@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Calculadora Plusvalía Municipal 2026 — Al Vender un Piso | HogarYa</title>
+<meta name="description" content="Calcula el impuesto de plusvalía municipal al vender tu vivienda. Dos métodos (objetivo y real) desde la sentencia del TC de 2021. Gratis.">
+<link rel="canonical" href="https://hogarya.org/plusvalia-municipal.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb on">Plusvalía</a><a href="/coste-calefaccion.html" class="nb">Calefacción</a><a href="/fianza-alquiler.html" class="nb">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Calculadora de Plusvalía Municipal</span></div><h1>📈 Calculadora de <em>Plusvalía Municipal</em></h1><p>Calcula el Impuesto sobre el Incremento del Valor de los Terrenos de Naturaleza Urbana (plusvalía municipal) al vender tu vivienda. Desde 2021 puedes elegir el método que te resulte más favorable.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">📈 ¿Cuánto pago de plusvalía al vender?</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Valor catastral del suelo (€)</label><input type="number" class="finp" id="pv-suelo" placeholder="30000" min="1000"></div>
+      <div class="fg"><label class="flbl">Años transcurridos desde la compra</label><input type="number" class="finp" id="pv-anos" placeholder="10" min="1" max="30"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Precio de venta (€)</label><input type="number" class="finp" id="pv-venta" placeholder="200000" min="0"></div>
+      <div class="fg"><label class="flbl">Precio de compra (€)</label><input type="number" class="finp" id="pv-compra" placeholder="150000" min="0"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Proporción suelo/total catastral (%)</label><input type="number" class="finp" id="pv-prop" placeholder="30" min="1" max="80" value="30"></div>
+      <div class="fg"><label class="flbl">Tipo impositivo municipal (%)</label><input type="number" class="finp" id="pv-tipo" placeholder="25" step="0.1" min="1" max="30" value="25"></div>
+    </div>
+    <button class="btn-calc" onclick="calcPlusv()">Calcular plusvalía</button>
+  </div>
+  <div id="result"></div>
+  <p class="infon"><strong>Proporción suelo:</strong> En la escritura o en el Catastro verás qué porcentaje del valor catastral corresponde al suelo (vs. construcción). Suele ser 20-40% en pisos y 50-70% en chalets. <strong>Tipo municipal:</strong> Varía por ciudad, típicamente 20-30%.</p>
+</div>
+<div class="calc-box" style="background:var(--g50)">
+  <p class="stitle">📋 Coeficientes método objetivo (RDL 26/2021)</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13px">
+    <thead><tr style="background:var(--navy)"><th style="color:white;padding:7px 10px;font-family:var(--fd);font-size:11px">Años de tenencia</th><th style="color:white;padding:7px 10px;font-family:var(--fd);font-size:11px;text-align:right">Coeficiente</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:7px 10px">Menos de 1 año</td><td style="padding:7px 10px;text-align:right;font-weight:700">0,14</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:7px 10px">1 a 5 años</td><td style="padding:7px 10px;text-align:right;font-weight:700">0,13 - 0,10</td></tr>
+      <tr><td style="padding:7px 10px">5 a 10 años</td><td style="padding:7px 10px;text-align:right;font-weight:700">0,08 - 0,10</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:7px 10px">10 a 15 años</td><td style="padding:7px 10px;text-align:right;font-weight:700">0,08 - 0,20</td></tr>
+      <tr><td style="padding:7px 10px">15 a 20 años</td><td style="padding:7px 10px;text-align:right;font-weight:700">0,26 - 0,65</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:7px 10px">20 años o más</td><td style="padding:7px 10px;text-align:right;font-weight:700">0,45</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/calculadora-ibi.html" class="rel-card"><div class="rel-ic">🏛️</div><div><div class="rel-t">IBI</div><div class="rel-d">Impuesto anual de tu vivienda</div></div></a><a href="/fianza-alquiler.html" class="rel-card"><div class="rel-ic">🏡</div><div><div class="rel-t">Alquiler</div><div class="rel-d">Gastos y fianza</div></div></a><a href="/comunidad-propietarios.html" class="rel-card"><div class="rel-ic">🏢</div><div><div class="rel-t">Comunidad</div><div class="rel-d">Cuotas y derramas</div></div></a><a href="/ahorro-energia.html" class="rel-card"><div class="rel-ic">💡</div><div><div class="rel-t">Ahorro Energético</div><div class="rel-d">Reduce gastos del hogar</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+var COEF=[[1,0.14],[2,0.13],[3,0.12],[4,0.11],[5,0.10],[6,0.09],[7,0.08],[8,0.08],[9,0.08],[10,0.08],[11,0.08],[12,0.08],[13,0.12],[14,0.16],[15,0.20],[16,0.26],[17,0.36],[18,0.46],[19,0.56],[20,0.65],[100,0.45]];
+function getCoef(a){for(var i=0;i<COEF.length;i++){if(a<=COEF[i][0])return COEF[i][1]}return 0.45}
+function calcPlusv(){
+  var suelo=parseFloat(document.getElementById('pv-suelo').value),anos=parseFloat(document.getElementById('pv-anos').value),venta=parseFloat(document.getElementById('pv-venta').value),compra=parseFloat(document.getElementById('pv-compra').value),prop=parseFloat(document.getElementById('pv-prop').value)||30,tipo=parseFloat(document.getElementById('pv-tipo').value)||25,el=document.getElementById('result');
+  if(!suelo||!anos){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Completa al menos el valor catastral del suelo y los años</p>';return}
+  var coef=getCoef(anos);
+  var biObj=suelo*coef;
+  var cuotaObj=biObj*(tipo/100);
+  var html='<div class="res vis"><div class="rmain">'+cuotaObj.toFixed(2)+' €</div><div class="rlbl">Plusvalía por método objetivo ('+anos+' años de tenencia)</div><div class="rrows"><div class="rr"><span class="rk">Valor catastral del suelo</span><span class="rv">'+suelo.toLocaleString('es-ES')+' €</span></div><div class="rr"><span class="rk">Coeficiente aplicable ('+anos+' años)</span><span class="rv">'+coef+'</span></div><div class="rr"><span class="rk">Base imponible (objetivo)</span><span class="rv">'+biObj.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Cuota tributaria ('+tipo+'%)</span><span class="rv warn">'+cuotaObj.toFixed(2)+' €</span></div>';
+  if(venta&&compra){
+    var ganancia=venta-compra;
+    if(ganancia<=0){html+='</div></div><div class="notice green" style="margin-top:8px">✅ No hay ganancia (precio de venta ≤ precio de compra). No se paga plusvalía por el método real. Solicita aplicar el método real a tu ayuntamiento.</div>';}
+    else{var biReal=ganancia*(prop/100);var cuotaReal=biReal*(tipo/100);var mejor=Math.min(cuotaObj,cuotaReal);html+='<div class="rr sep-r"><span class="rk">Plusvalía real (ganancia × '+prop+'% suelo × '+tipo+'%)</span><span class="rv">'+cuotaReal.toFixed(2)+' €</span></div><div class="rr"><span class="rk" style="font-weight:700">A pagar (método más favorable)</span><span class="rv bad" style="font-size:16px">'+mejor.toFixed(2)+' €</span></div></div></div>';html+='<div class="notice amber" style="margin-top:8px">Desde el RDL 26/2021 puedes elegir el método que resulte menor. Comunícalo expresamente al ayuntamiento al presentar la autoliquidación.</div>';}
+  }else{html+='</div></div><div class="notice blue" style="margin-top:8px">Para calcular el método real, introduce también el precio de venta y de compra.</div>';}
+  el.innerHTML=html;
+}
+</script>

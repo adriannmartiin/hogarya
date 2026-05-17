@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Calculadora Certificado Energético — Calificación A-G Vivienda | HogarYa 2026</title>
+<meta name="description" content="Calcula la calificación energética de tu vivienda (letras A a G) según el consumo anual en kWh/m². Recomendaciones para mejorar.">
+<link rel="canonical" href="https://hogarya.org/certificado-energetico.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb">Plusvalía</a><a href="/coste-calefaccion.html" class="nb">Calefacción</a><a href="/fianza-alquiler.html" class="nb">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Calculadora de Certificado Energético</span></div><h1>📋 Calculadora de <em>Certificado Energético</em></h1><p>Estima la calificación energética de tu vivienda introduciendo la superficie y el consumo anual. Descubre tu letra (A-G) y qué mejoras puedes hacer para subir de categoría.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">📋 ¿Qué letra energética tiene mi vivienda?</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Superficie útil de la vivienda (m²)</label><input type="number" class="finp" id="ce-m2" placeholder="80" min="20" max="1000"></div>
+      <div class="fg"><label class="flbl">Consumo total anual de energía (kWh)</label><input type="number" class="finp" id="ce-kwh" placeholder="8000" min="100"></div>
+    </div>
+    <div class="fg"><label class="flbl">Si no conoces el consumo total, introdúcelo por componentes:</label></div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Electricidad (kWh/año)</label><input type="number" class="finp" id="ce-elec" placeholder="3000" min="0"></div>
+      <div class="fg"><label class="flbl">Gas / gasoil (kWh/año equiv.)</label><input type="number" class="finp" id="ce-gas" placeholder="5000" min="0"></div>
+    </div>
+    <button class="btn-calc" onclick="calcCE()">Calcular calificación</button>
+  </div>
+  <div id="result"></div>
+  <p class="infon">Si no tienes el dato exacto, puedes estimarlo: suma el consumo de tus facturas de luz y gas del último año. 1 m³ de gas natural ≈ 10 kWh. 1 litro de gasoil ≈ 10 kWh.</p>
+</div>
+<div class="calc-box" style="background:var(--g50)">
+  <p class="stitle">📊 Escala de calificación energética en España</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+    <thead><tr style="background:var(--navy)"><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px">Letra</th><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px;text-align:right">kWh/m²/año</th><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px">Descripción</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:8px 10px"><span style="background:#1a9e1a;color:white;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">A</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">&lt; 30</td><td style="padding:8px 10px">Muy eficiente — pasivhaus, edificio nuevo</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px"><span style="background:#4cbf4c;color:white;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">B</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">30 - 60</td><td style="padding:8px 10px">Eficiente — obra nueva bien aislada</td></tr>
+      <tr><td style="padding:8px 10px"><span style="background:#9ece2f;color:white;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">C</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">60 - 100</td><td style="padding:8px 10px">Buena — vivienda reformada con aislamiento</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px"><span style="background:#f5d300;color:#333;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">D</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">100 - 150</td><td style="padding:8px 10px">Media — vivienda años 90-2000</td></tr>
+      <tr><td style="padding:8px 10px"><span style="background:#f5a800;color:white;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">E</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">150 - 200</td><td style="padding:8px 10px">Por debajo de la media — vivienda años 80</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px"><span style="background:#e06000;color:white;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">F</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">200 - 300</td><td style="padding:8px 10px">Ineficiente — vivienda antigua sin aislar</td></tr>
+      <tr><td style="padding:8px 10px"><span style="background:#c00000;color:white;padding:2px 10px;border-radius:4px;font-weight:700;font-family:var(--fd)">G</span></td><td style="padding:8px 10px;text-align:right;font-weight:700">&gt; 300</td><td style="padding:8px 10px">Muy ineficiente — rehabilitación urgente</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/ahorro-energia.html" class="rel-card"><div class="rel-ic">💡</div><div><div class="rel-t">Ahorro Energético</div><div class="rel-d">Reduce tu consumo</div></div></a><a href="/coste-calefaccion.html" class="rel-card"><div class="rel-ic">🔥</div><div><div class="rel-t">Calefacción</div><div class="rel-d">Cambia a sistema más eficiente</div></div></a><a href="/panel-solar.html" class="rel-card"><div class="rel-ic">☀️</div><div><div class="rel-t">Placas Solares</div><div class="rel-d">Mejora tu calificación</div></div></a><a href="/factura-luz.html" class="rel-card"><div class="rel-ic">⚡</div><div><div class="rel-t">Factura de Luz</div><div class="rel-d">Calcula tu factura</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+function calcCE(){
+  var m2=parseFloat(document.getElementById('ce-m2').value),kwh=parseFloat(document.getElementById('ce-kwh').value)||0,elec=parseFloat(document.getElementById('ce-elec').value)||0,gas=parseFloat(document.getElementById('ce-gas').value)||0,el=document.getElementById('result');
+  if(!m2){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Introduce la superficie de la vivienda</p>';return}
+  var total=kwh>0?kwh:elec+gas;
+  if(total<=0){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Introduce el consumo anual (total o por componentes)</p>';return}
+  var ratio=total/m2;
+  var letras=[['A',0,30,'#1a9e1a','Excelente. Máxima eficiencia energética. Muy bajos costes de calefacción y refrigeración.'],['B',30,60,'#4cbf4c','Muy buena. La vivienda tiene buen aislamiento y sistemas eficientes.'],['C',60,100,'#9ece2f','Buena. Por encima de la media española. Pequeñas mejoras pueden subir a B.'],['D',100,150,'#f5d300','Media. Típica vivienda española de los años 90-2000. Hay margen de mejora.'],['E',150,200,'#f5a800','Por debajo de la media. Se recomienda mejorar aislamiento y calefacción.'],['F',200,300,'#e06000','Ineficiente. Conviene planificar una rehabilitación energética.'],['G',300,9999,'#c00000','Muy ineficiente. Rehabilitación urgente recomendada. Altos costes energéticos.']];
+  var letra=letras.find(function(l){return ratio>=l[1]&&ratio<l[2]})||letras[6];
+  var recomendaciones={'A':'✅ Tu vivienda ya es muy eficiente. Considera instalar placas solares para maximizar el ahorro.','B':'✅ Buena calificación. Podrías mejorar con placas solares o una bomba de calor.','C':'💡 Para subir a B: mejora el aislamiento de ventanas y añade doble acristalamiento.','D':'💡 Para subir a C: aísla la fachada o cubierta, mejora ventanas y calderas.','E':'⚠️ Considera mejorar el aislamiento de fachada, suelo y cubierta. Cambia la caldera por bomba de calor.','F':'⚠️ Rehabilitación energética recomendada. Puedes optar a ayudas del Plan de Rehabilitación del Gobierno.','G':'🚨 Vivienda muy ineficiente. Consulta las ayudas de los Fondos Next Generation para rehabilitación.'};
+  el.innerHTML='<div class="letra-wrap"><div class="letra-badge" style="background:'+letra[3]+'"">'+letra[0]+'</div><div><div class="letra-t">Calificación '+letra[0]+' — '+ratio.toFixed(1)+' kWh/m²/año</div><div class="letra-d">'+letra[4]+'</div><div style="margin-top:8px;font-size:12px;color:var(--g600)">'+recomendaciones[letra[0]]+'</div></div></div><div class="res vis" style="margin-top:10px"><div class="rrows"><div class="rr"><span class="rk">Consumo total anual</span><span class="rv">'+total.toLocaleString('es-ES')+' kWh</span></div><div class="rr"><span class="rk">Superficie</span><span class="rv">'+m2+' m²</span></div><div class="rr"><span class="rk">Consumo por m²</span><span class="rv">'+ratio.toFixed(1)+' kWh/m²/año</span></div><div class="rr"><span class="rk">Calificación</span><span class="rv" style="font-size:18px;color:'+letra[3]+'">Letra '+letra[0]+'</span></div></div></div>';
+}
+</script>

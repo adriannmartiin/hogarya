@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Calculadora Factura de Luz España 2026 | HogarYa</title>
+<meta name="description" content="Calcula tu factura eléctrica estimada con tarifa PVPC o mercado libre. Incluye término de potencia, impuesto sobre electricidad (5.11%) e IVA reducido del 10%.">
+<link rel="canonical" href="https://hogarya.org/factura-luz.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb on">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb">Plusvalía</a><a href="/coste-calefaccion.html" class="nb">Calefacción</a><a href="/fianza-alquiler.html" class="nb">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Calculadora de Factura de Luz</span></div><h1>⚡ Calculadora de <em>Factura de Luz</em></h1><p>Estima tu factura eléctrica introduciendo tu potencia contratada, el consumo del mes y el precio. Incluye todos los componentes reales: término de potencia, impuesto sobre electricidad e IVA.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">⚡ ¿Cuánto me va a costar la luz?</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Potencia contratada (kW)</label><input type="number" class="finp" id="p-pot" placeholder="3.45" step="0.1" min="1" max="20" value="3.45"></div>
+      <div class="fg"><label class="flbl">Consumo del período (kWh)</label><input type="number" class="finp" id="p-kwh" placeholder="250" min="1"></div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Días del período</label><input type="number" class="finp" id="p-dias" placeholder="30" min="1" max="65" value="30"></div>
+      <div class="fg"><label class="flbl">Tarifa</label>
+        <select class="fsel" id="p-tarifa">
+          <option value="pvpc">PVPC (regulada) — ~0.14 €/kWh</option>
+          <option value="libre">Mercado libre — precio fijo</option>
+        </select>
+      </div>
+    </div>
+    <div class="fg" id="precio-libre-wrap" style="display:none">
+      <label class="flbl">Precio energía mercado libre (€/kWh)</label>
+      <input type="number" class="finp" id="p-precio-libre" placeholder="0.13" step="0.001" min="0.05">
+    </div>
+    <button class="btn-calc" onclick="calcLuz()">Calcular mi factura</button>
+  </div>
+  <div id="result"></div>
+  <p class="infon"><strong>Valores por defecto PVPC 2026:</strong> Término de potencia ~0.104 €/kW/día · Término de energía ~0.14 €/kWh · Impuesto electricidad 5.11269% · Alquiler contador 0.81 €/mes · IVA 10%.</p>
+</div>
+<div class="calc-box" style="background:var(--g50)">
+  <p class="stitle">📊 Componentes de la factura eléctrica en España</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+    <thead><tr style="background:var(--navy)"><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px">Componente</th><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px">Qué es</th><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px;text-align:right">Aprox. 2026</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:8px 10px;font-weight:700">Término de potencia</td><td style="padding:8px 10px">Se paga por la potencia contratada, no por el consumo</td><td style="padding:8px 10px;text-align:right">~0.104 €/kW/día</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px;font-weight:700">Término de energía</td><td style="padding:8px 10px">Se paga por los kWh consumidos</td><td style="padding:8px 10px;text-align:right">~0.12-0.18 €/kWh</td></tr>
+      <tr><td style="padding:8px 10px;font-weight:700">Impuesto electricidad</td><td style="padding:8px 10px">Tributo estatal sobre el consumo eléctrico</td><td style="padding:8px 10px;text-align:right">5.11269%</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px;font-weight:700">Alquiler del contador</td><td style="padding:8px 10px">Coste mensual por el equipo de medida</td><td style="padding:8px 10px;text-align:right">~0.81 €/mes</td></tr>
+      <tr><td style="padding:8px 10px;font-weight:700">IVA</td><td style="padding:8px 10px">IVA reducido sobre electricidad</td><td style="padding:8px 10px;text-align:right">10%</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/consumo-electrodomesticos.html" class="rel-card"><div class="rel-ic">🔌</div><div><div class="rel-t">Electrodomésticos</div><div class="rel-d">¿Qué consume más en casa?</div></div></a><a href="/ahorro-energia.html" class="rel-card"><div class="rel-ic">💡</div><div><div class="rel-t">Ahorro Energético</div><div class="rel-d">Reduce tu factura con LED y A+++</div></div></a><a href="/panel-solar.html" class="rel-card"><div class="rel-ic">☀️</div><div><div class="rel-t">Placas Solares</div><div class="rel-d">¿Cuánto ahorras con solar?</div></div></a><a href="/certificado-energetico.html" class="rel-card"><div class="rel-ic">📋</div><div><div class="rel-t">Certificado Energético</div><div class="rel-d">Calificación A-G de tu vivienda</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+document.getElementById('p-tarifa').addEventListener('change',function(){
+  document.getElementById('precio-libre-wrap').style.display=this.value==='libre'?'flex':'none';
+});
+function calcLuz(){
+  var pot=parseFloat(document.getElementById('p-pot').value)||3.45;
+  var kwh=parseFloat(document.getElementById('p-kwh').value);
+  var dias=parseFloat(document.getElementById('p-dias').value)||30;
+  var tarifa=document.getElementById('p-tarifa').value;
+  var el=document.getElementById('result');
+  if(!kwh){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Introduce el consumo en kWh</p>';return}
+  var precioKwh=tarifa==='pvpc'?0.14:parseFloat(document.getElementById('p-precio-libre').value)||0.13;
+  var tPot=pot*0.104*dias;
+  var tEn=kwh*precioKwh;
+  var impElec=(tPot+tEn)*0.0511269;
+  var contador=0.81*(dias/30);
+  var subtotal=tPot+tEn+impElec+contador;
+  var iva=subtotal*0.10;
+  var total=subtotal+iva;
+  var diario=total/dias;
+  el.innerHTML='<div class="res vis"><div class="rmain">'+total.toFixed(2)+' €</div><div class="rlbl">Factura estimada para '+dias+' días ('+kwh+' kWh)</div><div class="rrows"><div class="rr"><span class="rk">Término de potencia ('+pot+' kW × '+dias+' días)</span><span class="rv">'+tPot.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Término de energía ('+kwh+' kWh × '+precioKwh.toFixed(3)+')</span><span class="rv">'+tEn.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Impuesto electricidad (5.11269%)</span><span class="rv">'+impElec.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Alquiler contador</span><span class="rv">'+contador.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Subtotal sin IVA</span><span class="rv">'+subtotal.toFixed(2)+' €</span></div><div class="rr"><span class="rk">IVA (10%)</span><span class="rv">'+iva.toFixed(2)+' €</span></div><div class="rr sep-r"><span class="rk" style="font-weight:700">TOTAL ESTIMADO</span><span class="rv" style="font-size:18px">'+total.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Coste diario</span><span class="rv warn">'+diario.toFixed(2)+' €/día</span></div><div class="rr"><span class="rk">Coste anual estimado</span><span class="rv bad">'+(total*(365/dias)).toFixed(2)+' €/año</span></div></div></div>';
+}
+</script>

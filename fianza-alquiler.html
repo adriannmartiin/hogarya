@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Calculadora Fianza y Gastos de Alquiler 2026 | HogarYa</title>
+<meta name="description" content="Calcula la fianza legal, la comisión de agencia, el IVA y los gastos totales para formalizar un contrato de alquiler en España 2026.">
+<link rel="canonical" href="https://hogarya.org/fianza-alquiler.html">
+<meta name="robots" content="index,follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+</head><body><header class="hdr"><div class="hdr-in"><a href="/" class="logo"><div class="logo-ic">🏠</div>Hogar<span>Ya</span></a><nav class="mnav"><a href="/factura-luz.html" class="nb">Factura Luz</a><a href="/consumo-electrodomesticos.html" class="nb">Electrodomésticos</a><a href="/calculadora-ibi.html" class="nb">IBI</a><a href="/plusvalia-municipal.html" class="nb">Plusvalía</a><a href="/coste-calefaccion.html" class="nb">Calefacción</a><a href="/fianza-alquiler.html" class="nb on">Alquiler</a><a href="/panel-solar.html" class="nb">Solar ☀️</a><a href="/comunidad-propietarios.html" class="nb">Comunidad</a></nav></div></header><section class="hero-calc"><div style="max-width:1200px;margin:0 auto;padding:0 20px"><div class="breadcrumb"><a href="/">Inicio</a> › <span>Fianza y Gastos de Alquiler</span></div><h1>🏡 Fianza y <em>Gastos de Alquiler</em></h1><p>Calcula todos los gastos iniciales de un alquiler: fianza obligatoria, garantía adicional, comisión de agencia con IVA y el coste total del primer mes.</p></div></section><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><main class="mc-sm">
+<div class="calc-box">
+  <div class="calc-title">🏡 ¿Cuánto necesito para alquilar?</div>
+  <div class="cform">
+    <div class="frow">
+      <div class="fg"><label class="flbl">Alquiler mensual (€)</label><input type="number" class="finp" id="al-mes" placeholder="800" min="100"></div>
+      <div class="fg"><label class="flbl">Tipo de inmueble</label>
+        <select class="fsel" id="al-tipo">
+          <option value="1">Vivienda (1 mes de fianza)</option>
+          <option value="2">Local / vivienda temporal (2 meses)</option>
+        </select>
+      </div>
+    </div>
+    <div class="frow">
+      <div class="fg"><label class="flbl">Garantía adicional (meses)</label>
+        <select class="fsel" id="al-garantia">
+          <option value="0">Sin garantía adicional</option>
+          <option value="1">1 mes adicional</option>
+          <option value="2">2 meses adicionales</option>
+        </select>
+      </div>
+      <div class="fg"><label class="flbl">Comisión agencia inmobiliaria</label>
+        <select class="fsel" id="al-agencia">
+          <option value="0">Sin agencia (particular a particular)</option>
+          <option value="1">1 mes de alquiler + IVA 21%</option>
+          <option value="0.5">Medio mes + IVA 21%</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn-calc" onclick="calcAlq()">Calcular gastos totales</button>
+  </div>
+  <div id="result"></div>
+  <p class="infon">Desde la <strong>Ley de Vivienda 2023</strong>, la comisión de la agencia inmobiliaria la paga el propietario, no el inquilino (en viviendas de uso habitual). Consulta este punto con tu agencia.</p>
+</div>
+<div class="calc-box" style="background:var(--g50)">
+  <p class="stitle">📋 Fianza legal en España — Ley de Arrendamientos Urbanos</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px">
+    <thead><tr style="background:var(--navy)"><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px">Tipo de arrendamiento</th><th style="color:white;padding:8px 10px;font-family:var(--fd);font-size:11px;text-align:right">Fianza obligatoria (LAU)</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:8px 10px">Vivienda habitual</td><td style="padding:8px 10px;text-align:right;font-weight:700">1 mes de renta</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px">Local comercial / oficina</td><td style="padding:8px 10px;text-align:right;font-weight:700">2 meses de renta</td></tr>
+      <tr><td style="padding:8px 10px">Vivienda amueblada (uso temporal)</td><td style="padding:8px 10px;text-align:right;font-weight:700">2 meses de renta</td></tr>
+      <tr style="background:var(--g50)"><td style="padding:8px 10px">Garantía adicional (pactada)</td><td style="padding:8px 10px;text-align:right">Máx. 2 mensualidades adicionales</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="related"><p class="stitle">🔗 Otras herramientas</p><div class="related-grid"><a href="/calculadora-ibi.html" class="rel-card"><div class="rel-ic">🏛️</div><div><div class="rel-t">IBI</div><div class="rel-d">Impuesto de la vivienda</div></div></a><a href="/plusvalia-municipal.html" class="rel-card"><div class="rel-ic">📈</div><div><div class="rel-t">Plusvalía</div><div class="rel-d">Al vender la vivienda</div></div></a><a href="/comunidad-propietarios.html" class="rel-card"><div class="rel-ic">🏢</div><div><div class="rel-t">Comunidad</div><div class="rel-d">Gastos de comunidad</div></div></a><a href="/panel-solar.html" class="rel-card"><div class="rel-ic">☀️</div><div><div class="rel-t">Placas Solares</div><div class="rel-d">Ahorra en la factura de luz</div></div></a></div></div></main><div class="adw"><span class="adlbl">Publicidad</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><footer class="ftr"><div class="ftr-in"><div class="flogo">Hogar<span>Ya</span></div><p class="fdesc">Herramientas gratuitas para propietarios e inquilinos españoles.</p><div class="flinks"><a href="/">Inicio</a><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a></div><p class="fcopy">© 2026 HogarYa.org · Resultados orientativos.</p></div></footer></body></html><script>
+function calcAlq(){
+  var mes=parseFloat(document.getElementById('al-mes').value),tipo=parseFloat(document.getElementById('al-tipo').value),gar=parseFloat(document.getElementById('al-garantia').value),age=parseFloat(document.getElementById('al-agencia').value),el=document.getElementById('result');
+  if(!mes){el.innerHTML='<p style="color:var(--red);font-size:13px;margin-top:8px">⚠️ Introduce el alquiler mensual</p>';return}
+  var fianza=mes*tipo,garantia=mes*gar,agencia=mes*age*(1+0.21),total=mes+fianza+garantia+agencia;
+  var html='<div class="res vis"><div class="rmain">'+total.toFixed(2)+' €</div><div class="rlbl">Desembolso inicial total para el alquiler</div><div class="rrows"><div class="rr"><span class="rk">Primer mes de alquiler</span><span class="rv">'+mes.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Fianza legal ('+tipo+' mes'+(tipo>1?'es':'')+' × '+mes+'€)</span><span class="rv warn">'+fianza.toFixed(2)+' €</span></div>';
+  if(gar>0)html+='<div class="rr"><span class="rk">Garantía adicional ('+gar+' mes'+(gar>1?'es':'')+' pactados)</span><span class="rv warn">'+garantia.toFixed(2)+' €</span></div>';
+  if(age>0)html+='<div class="rr"><span class="rk">Comisión agencia ('+mes*(age)+'€ + IVA 21%)</span><span class="rv warn">'+agencia.toFixed(2)+' €</span></div>';
+  html+='<div class="rr sep-r"><span class="rk" style="font-weight:700">TOTAL DESEMBOLSO INICIAL</span><span class="rv bad" style="font-size:16px">'+total.toFixed(2)+' €</span></div><div class="rr"><span class="rk">Equivale a</span><span class="rv">'+(total/mes).toFixed(1)+' mensualidades</span></div></div></div>';
+  el.innerHTML=html;
+}
+</script>
